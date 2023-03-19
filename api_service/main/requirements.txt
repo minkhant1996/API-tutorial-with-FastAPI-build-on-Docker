@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pandas
+shutils
+opencv-python
+opencv-contrib-python
+python-multipart #install as solution to bug that I got during buidling in docker
+requests

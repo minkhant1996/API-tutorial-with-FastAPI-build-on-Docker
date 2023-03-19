@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+  min_docker_main:
+    build: ./main
+    ports:
+      - "8000:8000"
+    networks:
+      - min-network
+  min_docker_base64:
+    build: ./base64
+    ports:
+      - "5000:5000"
+    networks:
+      - min-network
+
+networks:
+  min-network:
+    driver: bridge
